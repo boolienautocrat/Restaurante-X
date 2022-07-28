@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+}
+
+p {
+  color: #696969;
+}
+
+@media screen and (min-width: 20rem) {
+  .reserve {
+    background-color: #ff7629;
+    color: #fff;
+    display: block;
+    font-size: 1.125rem;
+    font-weight: 900;
+    transition: transform linear 0.2s;
+  }
+  .reserve:hover {
+    transform: scale(1.05);
+  }
+
+  .orderOnline {
+    font-size: 1rem;
+    transition: background-color linear 0.2s;
+    font-weight: 500;
+  }
+  .orderOnline:hover {
+    color: #fff;
+    background-color: #ff7629;
+  }
+
+  .reserve,
+.orderOnline {
+    width: 100%;
+    border: none;
+    padding: 1.0625rem 0;
+    border-radius: 3.125rem;
+  }
+
+  nav {
+    display: flex;
+    gap: unset;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.0625rem 0.9375rem 0;
+  }
+  nav div {
+    height: 2.8125rem;
+    width: 2.8125rem;
+    background-color: #ff7629;
+    border-radius: 50%;
+    display: flex;
+    gap: unset;
+    flex-direction: unset;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .first-section {
+    margin-top: 6.25rem;
+    padding: 0.625rem 1.25rem 0;
+    display: flex;
+    gap: 1.25rem;
+    flex-direction: column;
+    align-items: unset;
+  }
+  .first-section h1 {
+    font-size: 2.25rem;
+  }
+  .first-section h1 span {
+    color: #ff7629;
+  }
+  .first-section p {
+    line-height: 1.6;
+  }
+  .first-section .buttons {
+    display: flex;
+    gap: 0.9375rem;
+    flex-direction: column;
+    align-items: unset;
+  }
+  .first-section .hero-img-wrapper .hero-img {
+    width: 100%;
+    transform: rotate(-2deg);
+    border-radius: 5%;
+  }
+  .first-section .hero-img-wrapper div {
+    background-color: #ff7629;
+    position: absolute;
+    z-index: -1;
+    top: 125%;
+    right: 0%;
+    bottom: -65%;
+    left: 0%;
+  }
+}

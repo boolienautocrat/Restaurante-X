@@ -1,0 +1,90 @@
+@use 'extras' as e;
+
+@media screen and (min-width: 20rem) {
+    .reserve {
+        background-color: e.$prim-col;
+        color: #fff;
+        display: block;
+        font-size: 1.125rem;
+        font-weight: 900;
+        transition: transform linear 0.2s;
+
+        &:hover {
+            transform: scale(1.05)
+        }
+    }
+
+    .orderOnline {
+        font-size: 1rem;
+        transition: background-color linear 0.2s;
+        font-weight: 500;
+
+        &:hover {
+            color: #fff;
+            background-color: e.$prim-col;
+        }
+    }
+
+    .reserve,
+    .orderOnline {
+        width: 100%;
+        border: none;
+        padding: 1.0625rem 0;
+        border-radius: 3.125rem;
+    }
+
+    nav {
+        @include e.flex (unset, row, center);
+        justify-content: space-between;
+        padding: 1.0625rem .9375rem 0;
+
+        div {
+            height: 2.8125rem;
+            width: 2.8125rem;
+            background-color: e.$prim-col;
+            border-radius: 50%;
+            @include e.flex(unset, unset, center);
+            justify-content: center;
+        }
+    }
+
+    .first-section {
+        margin-top: 6.25rem;
+        padding: .625rem 1.25rem 0;
+        @include e.flex(1.25rem, column, unset);
+
+        h1 {
+            font-size: 2.25rem;
+
+            span {
+                color: e.$prim-col;
+            }
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .buttons {
+            @include e.flex(.9375rem, column, unset);
+        }
+
+        .hero-img-wrapper {
+            .hero-img {
+                width: 100%;
+                transform: rotate(-2deg);
+                border-radius: 5%;
+            }
+
+            div {
+                background-color: e.$prim-col;
+                position: absolute;
+                z-index: -1;
+                top: 125%;
+                right: 0%;
+                bottom: -65%;
+                left: 0%;
+            }
+        }
+    }
+}

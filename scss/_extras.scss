@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+$prim-col: #ff7629;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+}
+
+p {
+    color: #696969;
+}
+
+@mixin flex ($gap, $dir, $align) {
+    display: flex;
+    gap: $gap;
+    flex-direction: $dir;
+    align-items: $align;
+}
