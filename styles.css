@@ -93,6 +93,10 @@ p {
     transform: rotate(-2deg);
     border-radius: 5%;
   }
+  .first-section .hero-img-wrapper .hero-img.start {
+    transition: transform linear 0.1s;
+    animation: heroAnim 1s;
+  }
   .first-section .hero-img-wrapper div {
     background-color: #ff7629;
     position: absolute;
@@ -101,5 +105,16 @@ p {
     right: 0%;
     bottom: -65%;
     left: 0%;
+  }
+
+  @keyframes heroAnim {
+    0% {
+      transform: rotate(0deg);
+      opacity: 0;
+    }
+    100% {
+      transform: rotate(-2deg);
+      opacity: 1;
+    }
   }
 }

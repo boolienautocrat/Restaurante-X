@@ -1,0 +1,1 @@
+var heroImg = document.querySelector(".hero-img")

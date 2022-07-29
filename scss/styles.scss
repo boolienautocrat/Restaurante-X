@@ -74,6 +74,11 @@
                 width: 100%;
                 transform: rotate(-2deg);
                 border-radius: 5%;
+
+                &.start {
+                    transition: transform linear 0.1s;
+                    animation: heroAnim 1s;
+                }
             }
 
             div {
@@ -85,6 +90,18 @@
                 bottom: -65%;
                 left: 0%;
             }
+        }
+    }
+
+    @keyframes heroAnim {
+        0% {
+            transform: rotate(0deg);
+            opacity: 0;
+        }
+
+        100% {
+            transform: rotate(-2deg);
+            opacity: 1;
         }
     }
 }
