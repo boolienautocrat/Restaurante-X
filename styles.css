@@ -14,6 +14,13 @@ p {
   color: #696969;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+}
+
 @media screen and (min-width: 20rem) {
   .reserve {
     background-color: #ff7629;
@@ -27,18 +34,18 @@ p {
     transform: scale(1.05);
   }
 
-  .orderOnline {
+  .orderOnlineBtn {
     font-size: 1rem;
     transition: background-color linear 0.2s;
     font-weight: 500;
   }
-  .orderOnline:hover {
+  .orderOnlineBtn:hover {
     color: #fff;
     background-color: #ff7629;
   }
 
   .reserve,
-.orderOnline {
+.orderOnlineBtn {
     width: 100%;
     border: none;
     padding: 1.0625rem 0;
@@ -75,6 +82,7 @@ p {
   }
   .first-section h1 {
     font-size: 2.25rem;
+    text-align: start;
   }
   .first-section h1 span {
     color: #ff7629;
@@ -87,13 +95,15 @@ p {
     gap: 0.9375rem;
     flex-direction: column;
     align-items: unset;
+    margin: 1.875rem 0 0;
+  }
+  .first-section .hero-img-wrapper {
+    margin: 1.875rem 0 0;
   }
   .first-section .hero-img-wrapper .hero-img {
     width: 100%;
     transform: rotate(-2deg);
     border-radius: 5%;
-  }
-  .first-section .hero-img-wrapper .hero-img.start {
     transition: transform linear 0.1s;
     animation: heroAnim 1s;
   }
@@ -101,10 +111,30 @@ p {
     background-color: #ff7629;
     position: absolute;
     z-index: -1;
-    top: 125%;
+    top: 135%;
     right: 0%;
-    bottom: -65%;
+    padding: 14.0625rem 0 0;
     left: 0%;
+  }
+  .first-section .order-online {
+    margin: 11.25rem 0 0;
+  }
+  .first-section .order-online h2 {
+    font-size: 1.5rem;
+  }
+  .first-section .order-online .apps-wrapper {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    margin: 3.125rem 0 6.25rem;
+  }
+  .first-section .order-online .apps-wrapper img {
+    height: 27px;
+    transition: all ease 0.2s;
+  }
+  .first-section .order-online .apps-wrapper img:hover {
+    transform: scale(1.1);
   }
 
   @keyframes heroAnim {
