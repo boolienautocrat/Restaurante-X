@@ -14,13 +14,6 @@ p {
   color: #696969;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  text-align: center;
-}
-
 a {
   text-decoration: none;
   color: #ff7629;
@@ -35,7 +28,7 @@ a {
     margin: 1.875rem 0 0;
   }
 
-  .reserve {
+  .btn-primary {
     background-color: #ff7629;
     color: #fff;
     display: block;
@@ -43,22 +36,22 @@ a {
     font-weight: 900;
     transition: transform linear 0.2s;
   }
-  .reserve:hover {
+  .btn-primary:hover {
     transform: scale(1.05);
   }
 
-  .orderOnlineBtn {
+  .btn-secondary {
     font-size: 1rem;
     transition: background-color linear 0.2s;
     font-weight: 500;
   }
-  .orderOnlineBtn:hover {
+  .btn-secondary:hover {
     color: #fff;
     background-color: #ff7629;
   }
 
-  .reserve,
-.orderOnlineBtn {
+  .btn-primary,
+.btn-secondary {
     width: 100%;
     border: none;
     padding: 1.0625rem 0;
@@ -153,6 +146,7 @@ a {
   }
   .menu h2 {
     margin: 5rem 0 3.125rem;
+    text-align: center;
   }
   .menu .buttons {
     margin: 1.875rem auto 0;
@@ -199,5 +193,54 @@ a {
       transform: rotate(-2deg);
       opacity: 1;
     }
+  }
+  .contact,
+.about-us {
+    background-color: #fff9f3;
+  }
+
+  .about-us {
+    padding: 6.25rem 0.9375rem 3.125rem;
+    display: flex;
+    gap: 1.5625rem;
+    flex-direction: column;
+    align-items: unset;
+  }
+  .about-us p {
+    line-height: 1.7;
+  }
+
+  .contact {
+    padding: 0 0.9375rem 0;
+  }
+  .contact img {
+    border-radius: 1.25rem;
+    width: 100%;
+  }
+  .contact .texts {
+    margin: 1.875rem 0 0;
+    padding: 0 0 6.25rem;
+    display: flex;
+    gap: 1.5625rem;
+    flex-direction: column;
+    align-items: unset;
+  }
+  .contact .texts img {
+    width: unset;
+    border-radius: unset;
+  }
+  .contact .texts .info {
+    display: flex;
+    gap: 0.4375rem;
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .contact .texts a {
+    color: #696969;
+    transition: color linear 0.3s;
+  }
+  .contact .texts .phone:hover a,
+.contact .texts .mail:hover a {
+    color: #ff7629;
   }
 }

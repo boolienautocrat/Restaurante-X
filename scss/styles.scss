@@ -6,7 +6,7 @@
         margin: 1.875rem 0 0;
     }
 
-    .reserve {
+    .btn-primary {
         background-color: e.$prim-col;
         color: #fff;
         display: block;
@@ -19,7 +19,7 @@
         }
     }
 
-    .orderOnlineBtn {
+    .btn-secondary {
         font-size: 1rem;
         transition: background-color linear 0.2s;
         font-weight: 500;
@@ -30,8 +30,8 @@
         }
     }
 
-    .reserve,
-    .orderOnlineBtn {
+    .btn-primary,
+    .btn-secondary {
         width: 100%;
         border: none;
         padding: 1.0625rem 0;
@@ -127,6 +127,7 @@
 
         h2 {
             margin: 5rem 0 3.125rem;
+            text-align: center;
         }
 
         .buttons {
@@ -170,6 +171,56 @@
         100% {
             transform: rotate(-2deg);
             opacity: 1;
+        }
+    }
+
+    .contact,
+    .about-us {
+        background-color: #fff9f3;
+    }
+
+    .about-us {
+        padding: 6.25rem .9375rem 3.125rem;
+        @include e.flex(1.5625rem, column, unset);
+
+        p {
+            line-height: 1.7;
+        }
+    }
+
+    .contact {
+        padding: 0 .9375rem 0;
+
+        img {
+            border-radius: 1.25rem;
+            width: 100%;
+        }
+
+        .texts {
+            margin: 1.875rem 0 0;
+            padding: 0 0 6.25rem;
+            @include e.flex(1.5625rem, column, unset);
+
+            img {
+                width: unset;
+                border-radius: unset;
+            }
+
+            .info {
+                @include e.flex(.4375rem, column, baseline);
+            }
+
+            a {
+                color: #696969;
+                transition: color linear 0.3s;
+            }
+
+            .phone,
+            .mail {
+                &:hover a {
+                    color: e.$prim-col;
+                }
+            }
         }
     }
 }
