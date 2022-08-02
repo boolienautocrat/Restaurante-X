@@ -117,6 +117,8 @@
     }
 
     .menu {
+        padding: 0 0 5rem;
+
         hr {
             width: 80%;
             border: .0625rem solid #e8e8e8;
@@ -128,7 +130,7 @@
         }
 
         .buttons {
-            margin: 1.875rem auto 5rem;
+            margin: 1.875rem auto 0;
             width: 90%;
         }
     }

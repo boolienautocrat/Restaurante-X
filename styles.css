@@ -143,6 +143,9 @@ a {
     transform: scale(1.1);
   }
 
+  .menu {
+    padding: 0 0 5rem;
+  }
   .menu hr {
     width: 80%;
     border: 0.0625rem solid #e8e8e8;
@@ -152,7 +155,7 @@ a {
     margin: 5rem 0 3.125rem;
   }
   .menu .buttons {
-    margin: 1.875rem auto 5rem;
+    margin: 1.875rem auto 0;
     width: 90%;
   }
 
