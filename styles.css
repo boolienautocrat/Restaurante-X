@@ -21,7 +21,20 @@ h4 {
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+  color: #ff7629;
+}
+
 @media screen and (min-width: 20rem) {
+  .buttons {
+    display: flex;
+    gap: 0.9375rem;
+    flex-direction: column;
+    align-items: unset;
+    margin: 1.875rem 0 0;
+  }
+
   .reserve {
     background-color: #ff7629;
     color: #fff;
@@ -90,13 +103,6 @@ h4 {
   .first-section p {
     line-height: 1.6;
   }
-  .first-section .buttons {
-    display: flex;
-    gap: 0.9375rem;
-    flex-direction: column;
-    align-items: unset;
-    margin: 1.875rem 0 0;
-  }
   .first-section .hero-img-wrapper {
     margin: 1.875rem 0 0;
   }
@@ -130,11 +136,55 @@ h4 {
     margin: 3.125rem 0 6.25rem;
   }
   .first-section .order-online .apps-wrapper img {
-    height: 27px;
+    height: 1.6875rem;
     transition: all ease 0.2s;
   }
   .first-section .order-online .apps-wrapper img:hover {
     transform: scale(1.1);
+  }
+
+  .menu hr {
+    width: 80%;
+    border: 0.0625rem solid #e8e8e8;
+    margin: 0 auto 0;
+  }
+  .menu h2 {
+    margin: 5rem 0 3.125rem;
+  }
+  .menu .buttons {
+    margin: 1.875rem auto 5rem;
+    width: 90%;
+  }
+
+  .cards {
+    padding: 0 0.625rem;
+    display: flex;
+    gap: 1.875rem;
+    flex-direction: column;
+    align-items: unset;
+  }
+  .cards .card {
+    border: 1px solid #e8e8e8;
+    padding: 3.125rem 1.25rem;
+    border-radius: 1.25rem;
+    text-align: center;
+    display: flex;
+    gap: 1.25rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cards .card p {
+    line-height: 1.6;
+  }
+  .cards .card a {
+    display: flex;
+    gap: 0.3125rem;
+    flex-direction: unset;
+    align-items: center;
+    transition: transform ease 0.15s;
+  }
+  .cards .card a:hover {
+    transform: scale(1.09);
   }
 
   @keyframes heroAnim {

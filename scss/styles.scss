@@ -1,6 +1,11 @@
 @use 'extras' as e;
 
 @media screen and (min-width: 20rem) {
+    .buttons {
+        @include e.flex(.9375rem, column, unset);
+        margin: 1.875rem 0 0;
+    }
+
     .reserve {
         background-color: e.$prim-col;
         color: #fff;
@@ -66,11 +71,6 @@
             line-height: 1.6;
         }
 
-        .buttons {
-            @include e.flex(.9375rem, column, unset);
-            margin: 1.875rem 0 0;
-        }
-
         .hero-img-wrapper {
             margin: 1.875rem 0 0;
 
@@ -105,12 +105,55 @@
                 margin: 3.125rem 0 6.25rem;
 
                 img {
-                    height: 27px;
+                    height: 1.6875rem;
                     transition: all ease 0.2s;
 
                     &:hover {
                         transform: scale(1.1);
                     }
+                }
+            }
+        }
+    }
+
+    .menu {
+        hr {
+            width: 80%;
+            border: .0625rem solid #e8e8e8;
+            margin: 0 auto 0;
+        }
+
+        h2 {
+            margin: 5rem 0 3.125rem;
+        }
+
+        .buttons {
+            margin: 1.875rem auto 5rem;
+            width: 90%;
+        }
+    }
+
+    .cards {
+        padding: 0 .625rem;
+        @include e.flex (1.875rem, column, unset);
+
+        .card {
+            border: 1px solid #e8e8e8;
+            padding: 3.125rem 1.25rem;
+            border-radius: 1.25rem;
+            text-align: center;
+            @include e.flex(1.25rem, column, center);
+
+            p {
+                line-height: 1.6;
+            }
+
+            a {
+                @include e.flex(.3125rem, unset, center);
+                transition: transform ease 0.15s;
+
+                &:hover {
+                    transform: scale(1.09);
                 }
             }
         }

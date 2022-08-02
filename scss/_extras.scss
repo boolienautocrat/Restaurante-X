@@ -24,6 +24,11 @@ h4 {
     text-align: center;
 }
 
+a {
+    text-decoration: none;
+    color: $prim-col;
+}
+
 @mixin flex ($gap, $dir, $align) {
     display: flex;
     gap: $gap;
