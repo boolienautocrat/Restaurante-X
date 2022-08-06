@@ -5,13 +5,15 @@
   box-sizing: border-box;
 }
 
-body {
+body,
+button {
   font-family: "DM Sans", sans-serif;
   font-size: 18px;
 }
 
 p {
   color: #696969;
+  line-height: 1.6;
 }
 
 a {
@@ -20,6 +22,13 @@ a {
 }
 
 @media screen and (min-width: 20rem) {
+  .logo {
+    transition: transform linear 0.2s;
+  }
+  .logo:hover {
+    transform: scale(1.06);
+  }
+
   .buttons {
     display: flex;
     gap: 0.9375rem;
@@ -34,7 +43,6 @@ a {
     display: block;
     font-size: 1.125rem;
     font-weight: 900;
-    transition: transform linear 0.2s;
   }
   .btn-primary:hover {
     transform: scale(1.05);
@@ -48,6 +56,7 @@ a {
   .btn-secondary:hover {
     color: #fff;
     background-color: #ff7629;
+    transform: scale(1.02);
   }
 
   .btn-primary,
@@ -56,6 +65,7 @@ a {
     border: none;
     padding: 1.0625rem 0;
     border-radius: 3.125rem;
+    transition: transform linear 0.2s;
   }
 
   nav {
@@ -92,9 +102,6 @@ a {
   }
   .first-section h1 span {
     color: #ff7629;
-  }
-  .first-section p {
-    line-height: 1.6;
   }
   .first-section .hero-img-wrapper {
     margin: 1.875rem 0 0;
@@ -170,9 +177,6 @@ a {
     flex-direction: column;
     align-items: center;
   }
-  .cards .card p {
-    line-height: 1.6;
-  }
   .cards .card a {
     display: flex;
     gap: 0.3125rem;
@@ -205,9 +209,6 @@ a {
     gap: 1.5625rem;
     flex-direction: column;
     align-items: unset;
-  }
-  .about-us p {
-    line-height: 1.7;
   }
 
   .contact {
@@ -242,5 +243,158 @@ a {
   .contact .texts .phone:hover a,
 .contact .texts .mail:hover a {
     color: #ff7629;
+  }
+
+  .menu-overview {
+    padding: 0 0.9375rem 0;
+  }
+  .menu-overview h2,
+.menu-overview p {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .menu-overview p {
+    margin: 0.9375rem 0 0;
+  }
+  .menu-overview .buttons {
+    margin: 2.5rem 0 5rem;
+  }
+
+  .menu-cards-wrapper {
+    margin: 3.125rem 0 0;
+    display: flex;
+    gap: 3.75rem;
+    flex-direction: column;
+    align-items: unset;
+  }
+
+  .menu-card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .menu-card button {
+    position: absolute;
+    align-self: flex-end;
+    font-weight: 900;
+    color: #161412;
+    background-color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin: 15px 10px 0 0;
+    transition: all ease 0.8s;
+    z-index: 1;
+  }
+  .menu-card img {
+    width: 100%;
+    border-radius: 1.25rem;
+    transition: transform ease-in-out 0.2s;
+  }
+  .menu-card h3 {
+    text-align: center;
+    font-size: 1.4375rem;
+    margin: 0.625rem 0 0;
+  }
+  .menu-card p {
+    margin: 0;
+  }
+  .menu-card:hover button {
+    color: #fff;
+    background-color: #161412;
+  }
+  .menu-card:hover h3 {
+    color: #ff7629;
+  }
+  .menu-card:hover img {
+    transform: scale3d(1.03, 1.03, 1);
+  }
+
+  .extra-ad {
+    background-color: #ff7629;
+    color: #fff;
+    padding: 5.625rem 0.9375rem 1.875rem;
+  }
+  .extra-ad hr {
+    border: 1px solid #fff;
+    width: 30%;
+  }
+  .extra-ad h1 {
+    width: 90%;
+    margin: 3.125rem 0 1.5625rem;
+  }
+  .extra-ad p {
+    color: #fff;
+  }
+  .extra-ad .buttons {
+    margin: 3.125rem 0 0;
+  }
+  .extra-ad .btn-primary {
+    background-color: #fff;
+    color: #161412;
+  }
+  .extra-ad .btn-primary:hover {
+    color: #ff7629;
+  }
+  .extra-ad .btn-secondary {
+    background-color: unset;
+    border: 1px solid #fff;
+    color: #fff;
+  }
+  .extra-ad .btn-secondary:hover {
+    background-color: #161412;
+    border: 1px solid #161412;
+  }
+
+  .floor-burger {
+    width: 100%;
+    padding: 0 0 50px;
+    background-color: #ff7629;
+  }
+
+  .horizRule {
+    border: 1px solid #e8e8e8;
+    margin: 6.25rem auto 6.25rem;
+    width: 90%;
+  }
+
+  footer {
+    padding: 1.875rem 0.9375rem 0;
+  }
+
+  .promotion {
+    display: flex;
+    gap: 1.4375rem;
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .socials {
+    display: flex;
+    gap: 0.9375rem;
+    flex-direction: unset;
+    align-items: unset;
+  }
+  .socials a {
+    background-color: #ff7629;
+    border-radius: 3.125rem;
+    display: flex;
+    padding: 10px;
+    transition: transform linear 0.3s;
+  }
+  .socials a:hover {
+    background-color: #161412;
+    transform: scale(1.1);
+  }
+  .socials a img {
+    height: 18px;
+  }
+
+  .credits {
+    margin: 3.125rem 0 0;
+  }
+  .credits .acknowledgment {
+    font-size: 0.75rem;
+    margin: 0.625rem 0 0;
   }
 }

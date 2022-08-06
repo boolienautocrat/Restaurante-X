@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 
 $prim-col: #ff7629;
+$sec-color: #161412;
 
 * {
     margin: 0;
@@ -8,13 +9,15 @@ $prim-col: #ff7629;
     box-sizing: border-box;
 }
 
-body {
+body,
+button {
     font-family: "DM Sans", sans-serif;
     font-size: 18px;
 }
 
 p {
     color: #696969;
+    line-height: 1.6;
 }
 
 a {

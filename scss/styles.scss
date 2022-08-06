@@ -1,6 +1,14 @@
 @use 'extras' as e;
 
 @media screen and (min-width: 20rem) {
+    .logo {
+        transition: transform linear 0.2s;
+
+        &:hover {
+            transform: scale(1.06)
+        }
+    }
+
     .buttons {
         @include e.flex(.9375rem, column, unset);
         margin: 1.875rem 0 0;
@@ -12,7 +20,6 @@
         display: block;
         font-size: 1.125rem;
         font-weight: 900;
-        transition: transform linear 0.2s;
 
         &:hover {
             transform: scale(1.05)
@@ -27,6 +34,7 @@
         &:hover {
             color: #fff;
             background-color: e.$prim-col;
+            transform: scale(1.02);
         }
     }
 
@@ -36,6 +44,7 @@
         border: none;
         padding: 1.0625rem 0;
         border-radius: 3.125rem;
+        transition: transform linear 0.2s;
     }
 
     nav {
@@ -65,10 +74,6 @@
             span {
                 color: e.$prim-col;
             }
-        }
-
-        p {
-            line-height: 1.6;
         }
 
         .hero-img-wrapper {
@@ -147,10 +152,6 @@
             text-align: center;
             @include e.flex(1.25rem, column, center);
 
-            p {
-                line-height: 1.6;
-            }
-
             a {
                 @include e.flex(.3125rem, unset, center);
                 transition: transform ease 0.15s;
@@ -182,10 +183,6 @@
     .about-us {
         padding: 6.25rem .9375rem 3.125rem;
         @include e.flex(1.5625rem, column, unset);
-
-        p {
-            line-height: 1.7;
-        }
     }
 
     .contact {
@@ -221,6 +218,172 @@
                     color: e.$prim-col;
                 }
             }
+        }
+    }
+
+    .menu-overview {
+        padding: 0 .9375rem 0;
+
+        h2,
+        p {
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        p {
+            margin: .9375rem 0 0;
+        }
+
+        .buttons {
+            margin: 2.5rem 0 5rem;
+        }
+    }
+
+    .menu-cards-wrapper {
+        margin: 3.125rem 0 0;
+        @include e.flex (3.75rem, column, unset);
+    }
+
+    .menu-card {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        button {
+            position: absolute;
+            align-self: flex-end;
+            font-weight: 900;
+            color: e.$sec-color;
+            background-color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 50px;
+            margin: 15px 10px 0 0;
+            transition: all ease 0.8s;
+            z-index: 1;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 1.25rem;
+            transition: transform ease-in-out 0.2s;
+        }
+
+        h3 {
+            text-align: center;
+            font-size: 1.4375rem;
+            margin: .625rem 0 0;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        &:hover button {
+            color: #fff;
+            background-color: e.$sec-color;
+        }
+
+        &:hover h3 {
+            color: e.$prim-col;
+        }
+
+        &:hover img {
+            transform: scale3d(1.03, 1.03, 1);
+        }
+    }
+
+    .extra-ad {
+        background-color: e.$prim-col;
+        color: #fff;
+        padding: 5.625rem .9375rem 1.875rem;
+
+        hr {
+            border: 1px solid #fff;
+            width: 30%;
+        }
+
+        h1 {
+            width: 90%;
+            margin: 3.125rem 0 1.5625rem;
+        }
+
+        p {
+            color: #fff;
+        }
+
+        .buttons {
+            margin: 3.125rem 0 0;
+        }
+
+        .btn-primary {
+            background-color: #fff;
+            color: e.$sec-color;
+
+            &:hover {
+                color: e.$prim-col;
+            }
+        }
+
+        .btn-secondary {
+            background-color: unset;
+            border: 1px solid #fff;
+            color: #fff;
+
+            &:hover {
+                background-color: e.$sec-color;
+                border: 1px solid e.$sec-color;
+            }
+        }
+    }
+
+    .floor-burger {
+        width: 100%;
+        padding: 0 0 50px;
+        background-color: e.$prim-col;
+    }
+
+    .horizRule {
+        border: 1px solid #e8e8e8;
+        margin: 6.25rem auto 6.25rem;
+        width: 90%;
+    }
+
+    footer {
+        padding: 1.875rem .9375rem 0;
+    }
+
+    .promotion {
+        @include e.flex(1.4375rem, column, baseline)
+    }
+
+    .socials {
+        @include e.flex(0.9375rem, unset, unset);
+
+        a {
+            background-color: e.$prim-col;
+            border-radius: 3.125rem;
+            display: flex;
+            padding: 10px;
+            transition: transform linear 0.3s;
+
+            &:hover {
+                background-color: e.$sec-color;
+                transform: scale(1.1);
+            }
+
+            img {
+                height: 18px;
+            }
+        }
+    }
+
+    .credits {
+        margin: 3.125rem 0 0;
+
+        .acknowledgment {
+            font-size: .75rem;
+            margin: .625rem 0 0;
         }
     }
 }
