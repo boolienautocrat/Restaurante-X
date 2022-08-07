@@ -91,7 +91,7 @@
                 background-color: e.$prim-col;
                 position: absolute;
                 z-index: -1;
-                top: 135%;
+                top: 53.625rem;
                 right: 0%;
                 padding: 14.0625rem 0 0;
                 left: 0%;
@@ -195,7 +195,7 @@
 
         .texts {
             margin: 1.875rem 0 0;
-            padding: 0 0 6.25rem;
+            padding: 0 0 3.125rem;
             @include e.flex(1.5625rem, column, unset);
 
             img {
@@ -222,7 +222,7 @@
     }
 
     .menu-overview {
-        padding: 0 .9375rem 0;
+        padding: 3.125rem .9375rem 0;
 
         h2,
         p {
@@ -247,7 +247,7 @@
     .menu-card {
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        gap: .9375rem;
 
         button {
             position: absolute;
@@ -256,9 +256,9 @@
             color: e.$sec-color;
             background-color: #fff;
             border: none;
-            padding: 10px 20px;
-            border-radius: 50px;
-            margin: 15px 10px 0 0;
+            padding: .625rem 1.25rem;
+            border-radius: 3.125rem;
+            margin: .9375rem .625rem 0 0;
             transition: all ease 0.8s;
             z-index: 1;
         }
@@ -364,7 +364,7 @@
             background-color: e.$prim-col;
             border-radius: 3.125rem;
             display: flex;
-            padding: 10px;
+            padding: .625rem;
             transition: transform linear 0.3s;
 
             &:hover {
