@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body,
 button {
   font-family: "DM Sans", sans-serif;
@@ -19,6 +23,10 @@ p {
 a {
   text-decoration: none;
   color: #ff7629;
+}
+
+ul {
+  list-style: none;
 }
 
 @media screen and (min-width: 20rem) {
@@ -76,7 +84,9 @@ a {
     justify-content: space-between;
     padding: 1.0625rem 0.9375rem 0;
   }
-  nav div {
+
+  .hamBtn-wrapper {
+    cursor: pointer;
     height: 2.8125rem;
     width: 2.8125rem;
     background-color: #ff7629;
@@ -86,6 +96,34 @@ a {
     flex-direction: unset;
     align-items: center;
     justify-content: center;
+    transition: transform linear 0.2s;
+  }
+  .hamBtn-wrapper:hover {
+    transform: scale(1.05);
+  }
+  .hamBtn-wrapper img {
+    height: 23px;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    margin: 15rem 0 0;
+    transition: all linear 0.3s;
+  }
+  .nav-links ul {
+    display: flex;
+    gap: 1.25rem;
+    flex-direction: column;
+    align-items: unset;
+  }
+
+  .nav-link a {
+    color: #161412;
+    font-weight: 500;
+    font-size: 20px;
   }
 
   .first-section {

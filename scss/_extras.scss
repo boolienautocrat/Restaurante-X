@@ -9,6 +9,10 @@ $sec-color: #161412;
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body,
 button {
     font-family: "DM Sans", sans-serif;
@@ -23,6 +27,10 @@ p {
 a {
     text-decoration: none;
     color: $prim-col;
+}
+
+ul {
+    list-style: none;
 }
 
 @mixin flex ($gap, $dir, $align) {
