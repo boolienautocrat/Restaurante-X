@@ -53,7 +53,12 @@
         padding: 1.0625rem .9375rem 0;
     }
 
+    .logo {
+        z-index: 1;
+    }
+
     .hamBtn-wrapper {
+        z-index: 1;
         cursor: pointer;
         height: 2.8125rem;
         width: 2.8125rem;
@@ -77,8 +82,12 @@
         position: absolute;
         background: #fff;
         width: 100%;
-        margin: 15rem 0 0;
         transition: all linear 0.3s;
+        left: 0;
+        padding: 15rem 0 1.25rem .9375rem;
+        box-shadow: 0px 16px 90px 5px rgba(0, 0, 0, 0.14),
+            0px 30px 30px 10px rgba(0, 0, 0, 0.12),
+            0px 10px 90px -7px rgba(0, 0, 0, 0.2);
 
         ul {
             @include e.flex(1.25rem, column, unset);
@@ -89,7 +98,7 @@
         a {
             color: e.$sec-color;
             font-weight: 500;
-            font-size: 20px;
+            font-size: 1.25rem;
         }
     }
 
@@ -153,7 +162,7 @@
     }
 
     .menu {
-        padding: 0 0 5rem;
+        padding: 0 0 6.25rem;
 
         hr {
             width: 80%;
@@ -212,7 +221,7 @@
     }
 
     .about-us {
-        padding: 6.25rem .9375rem 3.125rem;
+        padding: 80px .9375rem 3.125rem;
         @include e.flex(1.5625rem, column, unset);
     }
 
@@ -370,7 +379,7 @@
 
     .floor-burger {
         width: 100%;
-        padding: 0 0 50px;
+        padding: 0 0 3.125rem;
         background-color: e.$prim-col;
     }
 
