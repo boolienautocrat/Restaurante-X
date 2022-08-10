@@ -138,7 +138,7 @@ ul {
 
   .first-section {
     margin-top: 6.25rem;
-    padding: 0.625rem 1.25rem 0;
+    padding: 0.625rem 5.333% 0;
     display: flex;
     gap: 1.25rem;
     flex-direction: column;
@@ -252,7 +252,7 @@ ul {
   }
 
   .about-us {
-    padding: 80px 0.9375rem 3.125rem;
+    padding: 5rem 5.333% 3.125rem;
     display: flex;
     gap: 1.5625rem;
     flex-direction: column;
@@ -260,7 +260,7 @@ ul {
   }
 
   .contact {
-    padding: 0 0.9375rem 0;
+    padding: 0 4% 0;
   }
   .contact img {
     border-radius: 1.25rem;
@@ -294,7 +294,7 @@ ul {
   }
 
   .menu-overview {
-    padding: 3.125rem 0.9375rem 0;
+    padding: 3.125rem 4% 0;
   }
   .menu-overview h2,
 .menu-overview p {
@@ -361,7 +361,7 @@ ul {
   .extra-ad {
     background-color: #ff7629;
     color: #fff;
-    padding: 5.625rem 0.9375rem 1.875rem;
+    padding: 5.625rem 4% 1.875rem;
   }
   .extra-ad hr {
     border: 1px solid #fff;
@@ -407,7 +407,7 @@ ul {
   }
 
   footer {
-    padding: 1.875rem 0.9375rem 0;
+    padding: 1.875rem 4% 0;
   }
 
   .promotion {
@@ -419,7 +419,7 @@ ul {
 
   .socials {
     display: flex;
-    gap: 0.9375rem;
+    gap: 4%;
     flex-direction: unset;
     align-items: unset;
   }
