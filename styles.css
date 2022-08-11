@@ -560,4 +560,20 @@ ul {
   .about-us p {
     width: 80%;
   }
+
+  .contact {
+    display: flex;
+    gap: 3.125rem;
+  }
+  .contact img {
+    width: 47%;
+  }
+
+  .texts {
+    margin: auto 0;
+    gap: 1.875rem;
+  }
+  .texts h3 {
+    font-size: 1.5rem;
+  }
 }

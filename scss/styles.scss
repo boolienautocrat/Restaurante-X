@@ -543,4 +543,22 @@
             width: 80%;
         }
     }
+
+    .contact {
+        display: flex;
+        gap: 3.125rem;
+
+        img {
+            width: 47%;
+        }
+    }
+
+    .texts {
+        margin: auto 0;
+        gap: 1.875rem;
+
+        h3 {
+            font-size: 1.5rem;
+        }
+    }
 }
