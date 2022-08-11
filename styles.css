@@ -399,6 +399,10 @@ ul {
     border: 1px solid #161412;
   }
 
+  .floor-burger-desktop {
+    display: none;
+  }
+
   .floor-burger {
     width: 100%;
     padding: 0 0 3.125rem;
@@ -452,6 +456,12 @@ ul {
   }
 }
 @media screen and (min-width: 48rem) {
+  .btn-primary,
+.btn-secondary {
+    width: 45%;
+    padding: 1.25rem 0;
+  }
+
   .btn-secondary {
     transition: all linear 0.3s;
   }
@@ -606,5 +616,30 @@ ul {
   .menu-card p {
     margin-top: 0;
     width: 100%;
+  }
+
+  .extra-ad {
+    margin-top: 9.375rem;
+    display: flex;
+    gap: 1.5625rem;
+    padding: 9rem 4% 5rem;
+  }
+  .extra-ad .buttons {
+    width: unset;
+    gap: 0.9375rem;
+  }
+  .extra-ad h1 {
+    font-size: 2.125rem;
+  }
+
+  .floor-burger-desktop {
+    display: block;
+    width: 45%;
+    object-fit: cover;
+    border-radius: 0.9375rem;
+  }
+
+  .floor-burger {
+    display: none;
   }
 }
