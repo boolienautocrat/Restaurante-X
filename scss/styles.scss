@@ -534,4 +534,13 @@
         @include e.flex(1.5625rem, row, unset);
         margin: 3.125rem auto 0;
     }
+
+    .about-us {
+        padding-top: 6rem;
+        padding: 6rem 5.333% 5rem;
+
+        p {
+            width: 80%;
+        }
+    }
 }

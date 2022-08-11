@@ -552,4 +552,12 @@ ul {
     align-items: unset;
     margin: 3.125rem auto 0;
   }
+
+  .about-us {
+    padding-top: 6rem;
+    padding: 6rem 5.333% 5rem;
+  }
+  .about-us p {
+    width: 80%;
+  }
 }
