@@ -85,7 +85,7 @@ ul {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 1.0625rem 0.9375rem 0;
+    padding: 1.25rem 0.9375rem 0;
   }
 
   .logo {
@@ -151,25 +151,6 @@ ul {
   .first-section h1 span {
     color: #ff7629;
   }
-  .first-section .hero-img-wrapper {
-    margin: 1.875rem 0 0;
-  }
-  .first-section .hero-img-wrapper .hero-img {
-    width: 100%;
-    transform: rotate(-2deg);
-    border-radius: 5%;
-    transition: transform linear 0.1s;
-    animation: heroAnim 1s;
-  }
-  .first-section .hero-img-wrapper div {
-    background-color: #ff7629;
-    position: absolute;
-    z-index: -1;
-    top: 53.625rem;
-    right: 0%;
-    padding: 14.0625rem 0 0;
-    left: 0%;
-  }
   .first-section .order-online {
     margin: 11.25rem 0 0;
   }
@@ -189,6 +170,27 @@ ul {
   }
   .first-section .order-online .apps-wrapper img:hover {
     transform: scale(1.1);
+  }
+
+  .hero-img-wrapper {
+    margin: 1.875rem 0 0;
+  }
+  .hero-img-wrapper div {
+    background-color: #ff7629;
+    position: absolute;
+    z-index: -1;
+    top: 53.625rem;
+    right: 0%;
+    padding: 14.0625rem 0 0;
+    left: 0%;
+  }
+
+  .hero-img {
+    width: 100%;
+    transform: rotate(-2deg);
+    border-radius: 5%;
+    transition: transform linear 0.1s;
+    animation: heroAnim 1s;
   }
 
   .menu {
@@ -444,5 +446,52 @@ ul {
   .credits .acknowledgment {
     font-size: 0.75rem;
     margin: 0.625rem 0 0;
+  }
+}
+@media screen and (min-width: 48rem) {
+  nav {
+    padding: 1.875rem 1.25rem 0;
+  }
+
+  .hamBtn-wrapper {
+    height: 3.4375rem;
+    width: 3.4375rem;
+  }
+  .hamBtn-wrapper img {
+    height: 30px;
+  }
+
+  .first-section {
+    margin: 4rem 0 0;
+    padding: 0.625rem 2.7% 0;
+  }
+  .first-section h1 {
+    font-size: 3rem;
+  }
+
+  .text-wrapper {
+    display: flex;
+    gap: 2.5rem;
+  }
+  .text-wrapper div {
+    width: 50%;
+  }
+  .text-wrapper div p {
+    margin: 1rem 0 0;
+  }
+  .text-wrapper .buttons {
+    flex-direction: row;
+    width: unset;
+    margin: 3.125rem 0 0;
+  }
+
+  .hero-img-wrapper div {
+    width: 0;
+    top: unset;
+    left: unset;
+  }
+
+  .hero-img {
+    width: 370px;
   }
 }
