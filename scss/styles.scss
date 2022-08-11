@@ -547,6 +547,7 @@
     .contact {
         display: flex;
         gap: 3.125rem;
+        padding-bottom: 6.25rem;
 
         img {
             width: 47%;
@@ -559,6 +560,40 @@
 
         h3 {
             font-size: 1.5rem;
+        }
+    }
+
+    .menu-overview {
+        padding-top: 6.25rem;
+
+        p {
+            width: 75%;
+            margin: 0.9375rem auto 0;
+        }
+
+        h2 {
+            font-size: 2.125rem;
+        }
+
+        .buttons {
+            margin: 4rem auto 0;
+        }
+    }
+
+    .menu-cards-wrapper {
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 3rem;
+        column-gap: 3.897341147261757%;
+        flex-direction: row;
+    }
+
+    .menu-card {
+        width: 48%;
+
+        p {
+            margin-top: 0;
+            width: 100%;
         }
     }
 }
