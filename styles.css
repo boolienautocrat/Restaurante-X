@@ -151,24 +151,26 @@ ul {
   .first-section h1 span {
     color: #ff7629;
   }
-  .first-section .order-online {
+
+  .order-online {
     margin: 11.25rem 0 0;
   }
-  .first-section .order-online h2 {
+  .order-online h2 {
     font-size: 1.5rem;
   }
-  .first-section .order-online .apps-wrapper {
+
+  .apps-wrapper {
     display: flex;
     gap: 2rem;
     flex-direction: column;
     align-items: center;
     margin: 3.125rem 0 6.25rem;
   }
-  .first-section .order-online .apps-wrapper img {
+  .apps-wrapper img {
     height: 1.6875rem;
     transition: all ease 0.2s;
   }
-  .first-section .order-online .apps-wrapper img:hover {
+  .apps-wrapper img:hover {
     transform: scale(1.1);
   }
 
@@ -493,5 +495,19 @@ ul {
 
   .hero-img {
     width: 370px;
+  }
+
+  .order-online {
+    margin: 4rem 0 0;
+  }
+  .order-online h2 {
+    text-align: center;
+  }
+
+  .apps-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
   }
 }

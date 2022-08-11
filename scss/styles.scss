@@ -115,26 +115,26 @@
                 color: e.$prim-col;
             }
         }
+    }
 
-        .order-online {
-            margin: 11.25rem 0 0;
+    .order-online {
+        margin: 11.25rem 0 0;
 
-            h2 {
-                font-size: 1.5rem;
-            }
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
 
-            .apps-wrapper {
-                @include e.flex (2rem, column, center);
-                margin: 3.125rem 0 6.25rem;
+    .apps-wrapper {
+        @include e.flex (2rem, column, center);
+        margin: 3.125rem 0 6.25rem;
 
-                img {
-                    height: 1.6875rem;
-                    transition: all ease 0.2s;
+        img {
+            height: 1.6875rem;
+            transition: all ease 0.2s;
 
-                    &:hover {
-                        transform: scale(1.1);
-                    }
-                }
+            &:hover {
+                transform: scale(1.1);
             }
         }
     }
@@ -480,5 +480,20 @@
 
     .hero-img {
         width: 370px;
+    }
+
+    .order-online {
+        margin: 4rem 0 0;
+
+        h2 {
+            text-align: center;
+        }
+    }
+
+    .apps-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3rem;
     }
 }
