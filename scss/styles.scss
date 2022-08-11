@@ -633,4 +633,19 @@
     .floor-burger {
         display: none;
     }
+
+    footer {
+        display: flex;
+        gap: 4rem;
+        padding-bottom: 3rem;
+    }
+
+    .promotion {
+        width: 52%;
+    }
+
+    .credits {
+        width: 50%;
+        margin: auto 0;
+    }
 }
