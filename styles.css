@@ -799,4 +799,12 @@ ul {
     width: 75%;
     border-radius: 0.9375rem;
   }
+
+  .contact {
+    margin: 2rem 0 0;
+    gap: 6.25rem;
+  }
+  .contact img {
+    width: 30%;
+  }
 }
