@@ -831,4 +831,24 @@ ul {
   .menu-card {
     width: 23%;
   }
+
+  .extra-ad {
+    margin-top: 11rem;
+    padding: 6rem 3% 5rem 4%;
+    padding-right: 3%;
+    padding-left: 4%;
+  }
+  .extra-ad h1 {
+    color: #fff;
+    font-size: 2.5rem;
+  }
+  .extra-ad p {
+    width: 75%;
+  }
+  .extra-ad .text {
+    margin: auto 0;
+  }
+  .extra-ad .buttons {
+    width: 60%;
+  }
 }

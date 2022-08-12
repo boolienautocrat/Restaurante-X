@@ -840,4 +840,28 @@
     .menu-card {
         width: 23%;
     }
+
+    .extra-ad {
+        margin-top: 11rem;
+        padding: 6rem 3% 5rem 4%;
+        padding-right: 3%;
+        padding-left: 4%;
+
+        h1 {
+            color: #fff;
+            font-size: 2.5rem;
+        }
+
+        p {
+            width: 75%;
+        }
+
+        .text {
+            margin: auto 0;
+        }
+
+        .buttons {
+            width: 60%;
+        }
+    }
 }
