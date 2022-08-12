@@ -851,4 +851,12 @@ ul {
   .extra-ad .buttons {
     width: 60%;
   }
+
+  footer {
+    gap: 15rem;
+  }
+
+  .socials {
+    gap: 7%;
+  }
 }
