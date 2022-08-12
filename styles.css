@@ -18,6 +18,12 @@ button {
   font-size: 18px;
 }
 
+h1,
+h2,
+h3 {
+  color: #161412;
+}
+
 p {
   color: #696969;
   line-height: 1.6;
@@ -744,5 +750,20 @@ ul {
   .apps-wrapper {
     gap: 5rem;
     margin-top: 3.5rem;
+  }
+
+  .menu h2 {
+    font-size: 2.5rem;
+  }
+  .menu .buttons {
+    width: 33%;
+  }
+
+  .cards {
+    padding: 0 3rem;
+  }
+
+  .card {
+    width: 23%;
   }
 }
