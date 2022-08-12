@@ -240,6 +240,10 @@
         @include e.flex(1.5625rem, column, unset);
     }
 
+    .img-wrapper {
+        display: none;
+    }
+
     .contact {
         padding: 0 4% 0;
 
@@ -765,5 +769,39 @@
 
     .card {
         width: 23%;
+    }
+
+    .about-us {
+        flex-direction: row;
+        gap: 9.375rem;
+
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+            width: 75%;
+        }
+
+        .buttons {
+            width: 55%;
+            margin: 3.125rem 0 0;
+        }
+
+        p {
+            width: 95%;
+        }
+    }
+
+    .img-wrapper {
+        display: block;
+
+        img {
+            width: 75%;
+            border-radius: .9375rem;
+        }
     }
 }

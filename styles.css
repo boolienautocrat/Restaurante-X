@@ -283,6 +283,10 @@ ul {
     align-items: unset;
   }
 
+  .img-wrapper {
+    display: none;
+  }
+
   .contact {
     padding: 0 4% 0;
   }
@@ -765,5 +769,34 @@ ul {
 
   .card {
     width: 23%;
+  }
+
+  .about-us {
+    flex-direction: row;
+    gap: 9.375rem;
+  }
+  .about-us h2 {
+    font-size: 2.5rem;
+  }
+  .about-us .text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    width: 75%;
+  }
+  .about-us .buttons {
+    width: 55%;
+    margin: 3.125rem 0 0;
+  }
+  .about-us p {
+    width: 95%;
+  }
+
+  .img-wrapper {
+    display: block;
+  }
+  .img-wrapper img {
+    width: 75%;
+    border-radius: 0.9375rem;
   }
 }
