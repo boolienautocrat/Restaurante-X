@@ -85,7 +85,10 @@ ul {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 1.25rem 0.9375rem 0;
+    padding: 1.25rem 4% 0;
+  }
+  nav .buttons {
+    display: none;
   }
 
   .logo {
@@ -130,6 +133,16 @@ ul {
     align-items: unset;
   }
 
+  .nav-link {
+    transition: all linear 0.3s;
+  }
+  .nav-link:hover {
+    transform: scale(1.1);
+    color: #ff7629;
+  }
+  .nav-link:hover a {
+    color: #ff7629;
+  }
   .nav-link a {
     color: #161412;
     font-weight: 500;
@@ -470,7 +483,7 @@ ul {
   }
 
   nav {
-    padding: 1.875rem 1.25rem 0;
+    padding: 1.875rem 2.6041666667% 0;
     position: relative;
     z-index: 1;
   }
@@ -658,5 +671,40 @@ ul {
   .credits {
     width: 50%;
     margin: auto 0;
+  }
+}
+@media screen and (min-width: 64rem) {
+  nav {
+    gap: 5rem;
+  }
+  nav .buttons {
+    display: flex;
+    margin: 0;
+    width: 60%;
+    gap: 6.8441585107%;
+    justify-content: flex-end;
+  }
+  nav .buttons button {
+    display: block;
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .hamBtn-wrapper {
+    display: none;
+  }
+
+  .nav-links {
+    display: block;
+    position: unset;
+    padding: 0;
+    box-shadow: none;
+  }
+  .nav-links ul {
+    flex-direction: unset;
+    gap: 2.5rem;
+  }
+  .nav-links a {
+    font-weight: unset;
   }
 }

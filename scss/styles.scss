@@ -50,7 +50,11 @@
     nav {
         @include e.flex (unset, row, center);
         justify-content: space-between;
-        padding: 1.25rem .9375rem 0;
+        padding: 1.25rem 4% 0;
+
+        .buttons {
+            display: none;
+        }
     }
 
     .logo {
@@ -95,6 +99,17 @@
     }
 
     .nav-link {
+        transition: all linear 0.3s;
+
+        &:hover {
+            transform: scale(1.1);
+            color: e.$prim-col;
+        }
+
+        &:hover a {
+            color: e.$prim-col;
+        }
+
         a {
             color: e.$sec-color;
             font-weight: 500;
@@ -449,7 +464,7 @@
     }
 
     nav {
-        padding: 1.875rem 1.25rem 0;
+        padding: 1.875rem 2.604166666666667% 0;
         position: relative;
         z-index: 1;
     }
@@ -649,5 +664,45 @@
     .credits {
         width: 50%;
         margin: auto 0;
+    }
+}
+
+@media screen and (min-width:64rem) {
+    nav {
+        gap: 5rem;
+
+        .buttons {
+            display: flex;
+            margin: 0;
+            width: 60%;
+            gap: 6.844158510711108%;
+            justify-content: flex-end;
+
+            button {
+                display: block;
+                width: 100%;
+                padding: 1rem 0;
+            }
+        }
+    }
+
+    .hamBtn-wrapper {
+        display: none;
+    }
+
+    .nav-links {
+        display: block;
+        position: unset;
+        padding: 0;
+        box-shadow: none;
+
+        ul {
+            flex-direction: unset;
+            gap: 2.5rem;
+        }
+
+        a {
+            font-weight: unset;
+        }
     }
 }
