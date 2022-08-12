@@ -807,4 +807,28 @@ ul {
   .contact img {
     width: 30%;
   }
+
+  .menu-overview {
+    padding-top: 5rem;
+  }
+  .menu-overview h2 {
+    font-size: 2.5rem;
+  }
+  .menu-overview > p {
+    width: 43%;
+  }
+  .menu-overview .buttons {
+    justify-content: center;
+    width: 35%;
+  }
+
+  .menu-cards-wrapper {
+    justify-content: unset;
+    gap: 2rem;
+    row-gap: 4rem;
+  }
+
+  .menu-card {
+    width: 23%;
+  }
 }
