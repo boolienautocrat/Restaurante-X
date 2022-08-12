@@ -256,7 +256,7 @@ ul {
 
   @keyframes heroAnim {
     0% {
-      transform: rotate(0deg);
+      transform: rotate(1deg);
       opacity: 0;
     }
     100% {
@@ -513,7 +513,7 @@ ul {
   .text-wrapper div {
     width: 50%;
   }
-  .text-wrapper div p {
+  .text-wrapper p {
     margin: 1rem 0 0;
   }
   .text-wrapper .buttons {
@@ -706,5 +706,43 @@ ul {
   }
   .nav-links a {
     font-weight: unset;
+  }
+
+  .first-section {
+    padding: 1rem 5% 0;
+  }
+
+  .text-wrapper {
+    gap: 4rem;
+  }
+  .text-wrapper div {
+    margin: auto 0;
+  }
+  .text-wrapper .hero-img-wrapper {
+    margin: 0;
+  }
+  .text-wrapper h1 {
+    font-size: 3.75rem;
+  }
+  .text-wrapper p {
+    margin: 2rem 0 0;
+    line-height: 1.7;
+    width: 90%;
+  }
+  .text-wrapper .buttons {
+    width: 67%;
+  }
+
+  .hero-img {
+    width: 100%;
+  }
+
+  .order-online {
+    margin: 6rem 0 0;
+  }
+
+  .apps-wrapper {
+    gap: 5rem;
+    margin-top: 3.5rem;
   }
 }
