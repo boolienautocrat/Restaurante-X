@@ -119,8 +119,13 @@
 
     .first-section {
         margin-top: 6.25rem;
-        padding: .625rem 5.333% 0;
-        @include e.flex(1.25rem, column, unset);
+        padding: 0 5.333% 0;
+
+        .text-wrapper {
+            div {
+                @include e.flex(1.25rem, column, unset);
+            }
+        }
 
         h1 {
             font-size: 2.25rem;
@@ -130,19 +135,23 @@
                 color: e.$prim-col;
             }
         }
+
+        .buttons {
+            width: 100%;
+        }
     }
 
     .order-online {
         margin: 11.25rem 0 0;
 
         h2 {
-            font-size: 1.5rem;
+            text-align: center
         }
     }
 
     .apps-wrapper {
         @include e.flex (2rem, column, center);
-        margin: 3.125rem 0 6.25rem;
+        margin: 4rem 0 6.25rem;
 
         img {
             height: 1.6875rem;
@@ -161,7 +170,7 @@
             background-color: e.$prim-col;
             position: absolute;
             z-index: -1;
-            top: 53.625rem;
+            top: 156.285%;
             right: 0%;
             padding: 14.0625rem 0 0;
             left: 0%;
@@ -197,7 +206,7 @@
     }
 
     .cards {
-        padding: 0 .625rem;
+        padding: 0 .9375rem;
         @include e.flex (1.875rem, column, unset);
 
         .card {
@@ -214,6 +223,10 @@
                 &:hover {
                     transform: scale(1.09);
                 }
+            }
+
+            p {
+                width: 88%;
             }
         }
     }
