@@ -42,6 +42,20 @@ ul {
   list-style: none;
 }
 
+.progress-container {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 8px;
+  background: #f1f1f1;
+}
+.progress-container div {
+  background-color: #ff7629;
+  width: 0%;
+  height: 100%;
+}
+
 @media screen and (min-width: 20rem) {
   .logo {
     transition: transform linear 0.2s;
@@ -49,7 +63,6 @@ ul {
   .logo:hover {
     transform: scale(1.06);
   }
-
   .buttons {
     display: flex;
     gap: 0.9375rem;
@@ -57,7 +70,6 @@ ul {
     align-items: unset;
     margin: 1.875rem 0 0;
   }
-
   .btn-primary {
     background-color: #ff7629;
     color: #fff;
@@ -68,7 +80,6 @@ ul {
   .btn-primary:hover {
     transform: scale(1.05);
   }
-
   .btn-secondary {
     font-size: 1rem;
     font-weight: 500;
@@ -78,9 +89,8 @@ ul {
     background-color: #ff7629;
     transform: scale(1.03);
   }
-
   .btn-primary,
-.btn-secondary {
+  .btn-secondary {
     width: 100%;
     border: none;
     padding: 1.0625rem 0;
@@ -88,7 +98,6 @@ ul {
     transition: all linear 0.2s;
     cursor: pointer;
   }
-
   nav {
     display: flex;
     gap: unset;
@@ -100,11 +109,9 @@ ul {
   nav .buttons {
     display: none;
   }
-
   .logo {
     z-index: 1;
   }
-
   .hamBtn-wrapper {
     z-index: 1;
     cursor: pointer;
@@ -125,7 +132,6 @@ ul {
   .hamBtn-wrapper img {
     height: 23px;
   }
-
   .nav-links {
     display: none;
     position: absolute;
@@ -142,12 +148,11 @@ ul {
     flex-direction: column;
     align-items: unset;
   }
-
   .nav-link {
     transition: all linear 0.3s;
   }
   .nav-link:hover {
-    transform: scale(1.1);
+    transform: scale(1.02);
     color: #ff7629;
   }
   .nav-link:hover a {
@@ -158,7 +163,6 @@ ul {
     font-weight: 500;
     font-size: 1.25rem;
   }
-
   .first-section {
     margin-top: 6.25rem;
     padding: 0 5.333% 0;
@@ -179,14 +183,12 @@ ul {
   .first-section .buttons {
     width: 100%;
   }
-
   .order-online {
     margin: 11.25rem 0 0;
   }
   .order-online h2 {
     text-align: center;
   }
-
   .apps-wrapper {
     display: flex;
     gap: 2rem;
@@ -201,7 +203,6 @@ ul {
   .apps-wrapper img:hover {
     transform: scale(1.1);
   }
-
   .hero-img-wrapper {
     margin: 1.875rem 0 0;
   }
@@ -214,7 +215,6 @@ ul {
     padding: 14.0625rem 0 0;
     left: 0%;
   }
-
   .hero-img {
     width: 100%;
     transform: rotate(-2deg);
@@ -222,7 +222,6 @@ ul {
     transition: transform linear 0.1s;
     animation: heroAnim 1s;
   }
-
   .menu {
     padding: 0 0 6.25rem;
   }
@@ -235,12 +234,10 @@ ul {
     margin: 5rem 0 3.125rem;
     text-align: center;
   }
-
   .buttons {
     margin: 1.875rem auto 0;
     width: 90%;
   }
-
   .cards {
     padding: 0 0.9375rem;
     display: flex;
@@ -271,7 +268,6 @@ ul {
   .cards .card p {
     width: 88%;
   }
-
   @keyframes heroAnim {
     0% {
       transform: rotate(1deg);
@@ -283,10 +279,9 @@ ul {
     }
   }
   .contact,
-.about-us {
+  .about-us {
     background-color: #fff9f3;
   }
-
   .about-us {
     padding: 5rem 5.333% 3.125rem;
     display: flex;
@@ -300,11 +295,9 @@ ul {
     flex-direction: column;
     align-items: unset;
   }
-
   .img-wrapper {
     display: none;
   }
-
   .contact {
     padding: 0 5% 0;
   }
@@ -335,15 +328,14 @@ ul {
     transition: color linear 0.3s;
   }
   .contact .texts .phone:hover a,
-.contact .texts .mail:hover a {
+  .contact .texts .mail:hover a {
     color: #ff7629;
   }
-
   .menu-overview {
     padding: 3.125rem 5% 0;
   }
   .menu-overview h2,
-.menu-overview p {
+  .menu-overview p {
     text-align: center;
     margin: 0 auto;
   }
@@ -353,7 +345,6 @@ ul {
   .menu-overview .buttons {
     margin: 3.75rem auto 5rem;
   }
-
   .menu-cards-wrapper {
     margin: 3.125rem 0 0;
     display: flex;
@@ -361,7 +352,6 @@ ul {
     flex-direction: column;
     align-items: unset;
   }
-
   .menu-card {
     display: flex;
     flex-direction: column;
@@ -403,7 +393,6 @@ ul {
   .menu-card:hover img {
     transform: scale3d(1.03, 1.03, 1);
   }
-
   .extra-ad {
     background-color: #ff7629;
     color: #fff;
@@ -418,7 +407,7 @@ ul {
     margin: 3.125rem 0 1.5625rem;
   }
   .extra-ad p,
-.extra-ad h1 {
+  .extra-ad h1 {
     color: #fff;
   }
   .extra-ad .buttons {
@@ -442,37 +431,31 @@ ul {
     background-color: #161412;
     border: 1px solid #161412;
   }
-
   .floor-burger-desktop {
     display: none;
   }
-
   .floor-burger {
     width: 100%;
     padding: 0 0 3.125rem;
     background-color: #ff7629;
   }
-
   .horizRule {
     border: 1px solid #e8e8e8;
     margin: 6.25rem auto 6.25rem;
     width: 90%;
   }
-
   footer {
     padding: 1.875rem 5% 0;
   }
-
   .promotion {
     display: flex;
     gap: 1.4375rem;
     flex-direction: column;
     align-items: baseline;
   }
-
   .socials {
     display: flex;
-    gap: 4%;
+    gap: 5%;
     flex-direction: unset;
     align-items: unset;
   }
@@ -490,7 +473,6 @@ ul {
   .socials a img {
     height: 18px;
   }
-
   .credits {
     margin: 3.125rem 0 0;
   }
@@ -501,24 +483,21 @@ ul {
 }
 @media screen and (min-width: 48rem) {
   .btn-primary,
-.btn-secondary {
+  .btn-secondary {
     width: 45%;
     padding: 1.25rem 0;
   }
-
   .btn-secondary {
     transition: all linear 0.3s;
   }
   .btn-secondary:hover {
     transform: scale(1.09);
   }
-
   nav {
     padding: 1.875rem 2.6041666667% 0;
     position: relative;
     z-index: 1;
   }
-
   .hamBtn-wrapper {
     height: 3.4375rem;
     width: 3.4375rem;
@@ -526,7 +505,6 @@ ul {
   .hamBtn-wrapper img {
     height: 30px;
   }
-
   .first-section {
     margin: 4rem 0 0;
     padding: 0.625rem 2.7% 0;
@@ -534,7 +512,6 @@ ul {
   .first-section h1 {
     font-size: 3rem;
   }
-
   .text-wrapper {
     display: flex;
     gap: 2.5rem;
@@ -552,24 +529,20 @@ ul {
     width: unset;
     margin: 3.125rem 0 0;
   }
-
   .hero-img-wrapper div {
     width: 0;
     top: unset;
     left: unset;
   }
-
   .hero-img {
     width: 370px;
   }
-
   .order-online {
     margin: 4rem 0 0;
   }
   .order-online h2 {
     text-align: center;
   }
-
   .apps-wrapper {
     flex-wrap: wrap;
     justify-content: center;
@@ -578,7 +551,6 @@ ul {
     flex-direction: row;
     align-items: unset;
   }
-
   .menu hr {
     width: 90%;
   }
@@ -586,12 +558,10 @@ ul {
     margin: 4rem 0 3.125rem;
     font-size: 2.125rem;
   }
-
   .cards {
     flex-direction: row;
     flex-wrap: wrap;
   }
-
   .card {
     width: 47.89%;
     transition: all linear 0.2s;
@@ -599,7 +569,6 @@ ul {
   .card:hover {
     transform: scale(1.06);
   }
-
   .buttons {
     width: 60%;
     display: flex;
@@ -608,7 +577,6 @@ ul {
     align-items: unset;
     margin: 3.125rem auto 0;
   }
-
   .about-us {
     padding-top: 6rem;
     padding: 6rem 5.333% 5rem;
@@ -616,7 +584,6 @@ ul {
   .about-us p {
     width: 80%;
   }
-
   .contact {
     display: flex;
     gap: 3.125rem;
@@ -625,7 +592,6 @@ ul {
   .contact img {
     width: 47%;
   }
-
   .texts {
     margin: auto 0;
     gap: 1.875rem;
@@ -633,7 +599,6 @@ ul {
   .texts h3 {
     font-size: 1.5rem;
   }
-
   .menu-overview {
     padding-top: 6.25rem;
   }
@@ -647,7 +612,6 @@ ul {
   .menu-overview .buttons {
     margin: 4rem auto 0;
   }
-
   .menu-cards-wrapper {
     justify-content: center;
     flex-wrap: wrap;
@@ -655,7 +619,6 @@ ul {
     column-gap: 3.8973411473%;
     flex-direction: row;
   }
-
   .menu-card {
     width: 48%;
   }
@@ -663,7 +626,6 @@ ul {
     margin-top: 0;
     width: 100%;
   }
-
   .extra-ad {
     margin-top: 9.375rem;
     display: flex;
@@ -677,28 +639,23 @@ ul {
   .extra-ad h1 {
     font-size: 2.125rem;
   }
-
   .floor-burger-desktop {
     display: block;
     width: 45%;
     object-fit: cover;
     border-radius: 0.9375rem;
   }
-
   .floor-burger {
     display: none;
   }
-
   footer {
     display: flex;
     gap: 4rem;
     padding-bottom: 3rem;
   }
-
   .promotion {
     width: 52%;
   }
-
   .credits {
     width: 50%;
     margin: auto 0;
@@ -720,11 +677,9 @@ ul {
     width: 100%;
     padding: 1rem 0;
   }
-
   .hamBtn-wrapper {
     display: none;
   }
-
   .nav-links {
     display: block;
     position: unset;
@@ -738,11 +693,9 @@ ul {
   .nav-links a {
     font-weight: unset;
   }
-
   .first-section {
     padding: 1rem 5% 0;
   }
-
   .text-wrapper {
     gap: 4rem;
   }
@@ -763,35 +716,28 @@ ul {
   .text-wrapper .buttons {
     width: 67%;
   }
-
   .hero-img {
     width: 100%;
   }
-
   .order-online {
     margin: 6rem 0 0;
   }
-
   .apps-wrapper {
     gap: 5rem;
     margin-top: 3.5rem;
   }
-
   .menu h2 {
     font-size: 2.5rem;
   }
   .menu .buttons {
     width: 33%;
   }
-
   .cards {
     padding: 0 3rem;
   }
-
   .card {
     width: 23%;
   }
-
   .about-us {
     flex-direction: row;
     gap: 9.375rem;
@@ -812,7 +758,6 @@ ul {
   .about-us p {
     width: 95%;
   }
-
   .img-wrapper {
     display: block;
   }
@@ -820,7 +765,6 @@ ul {
     width: 75%;
     border-radius: 0.9375rem;
   }
-
   .contact {
     margin: 2rem 0 0;
     gap: 6.25rem;
@@ -828,7 +772,6 @@ ul {
   .contact img {
     width: 30%;
   }
-
   .menu-overview {
     padding-top: 5rem;
   }
@@ -842,17 +785,14 @@ ul {
     justify-content: center;
     width: 35%;
   }
-
   .menu-cards-wrapper {
     justify-content: unset;
     gap: 2rem;
     row-gap: 4rem;
   }
-
   .menu-card {
     width: 23%;
   }
-
   .extra-ad {
     margin-top: 11rem;
     padding: 6rem 3% 5rem 4%;
@@ -872,11 +812,9 @@ ul {
   .extra-ad .buttons {
     width: 60%;
   }
-
   footer {
     gap: 15rem;
   }
-
   .socials {
     gap: 7%;
   }
